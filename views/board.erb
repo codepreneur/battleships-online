@@ -1,126 +1,19 @@
 
-		<section class='board'>
-			<table>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-				<th>
-					<td>A1</td>
-					<td>A2</td>
-					<td>A3</td>
-					<td>A4</td>
-					<td>A5</td>
-					<td>A6</td>
-					<td>A7</td>
-					<td>A8</td>
-					<td>A9</td>
-					<td>A10</td>
-				</th>
-
-			</table>	
-		</section>
+		<div ng-controller="ddController" style="margin-top:50px;">
+			<div class="row">
+				<div class="col-md-1 col-md-offset-1">
+					<p>DRAG AND DROP A SHIP onto the grid to the right</p>
+					<div class="peg green" x-lvl-draggable="true" data-color="green">Destroyer</div>
+					<div class="peg red" x-lvl-draggable="true" data-color="red">Cruiser</div>
+					<div class="peg blue" x-lvl-draggable="true" data-color="blue">Submarine</div>
+					<div class="peg black" x-lvl-draggable="true" data-color="black">Battleship</div>
+					<div class="peg grey" x-lvl-draggable="true" data-color="grey">Aircraft Carrier</div>
+				</div>
+	
+				<div class="col-md-10">
+					<div ng-repeat="r in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+						<span class="slot circle" ng-repeat="c in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" x-lvl-drop-target="true" x-on-drop="dropped(dragEl, dropEl)"></span>
+					</div>
+				</div>
+			</div>
+		</div>
