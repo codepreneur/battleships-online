@@ -17,4 +17,3 @@ get '/shoot/:coord' do
 
 end
 
-p a =~ /\A[A-Za-z0-9_!]{5,12}\Z/
