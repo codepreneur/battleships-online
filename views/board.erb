@@ -126,131 +126,134 @@
 	    </div>
 	    </div>
 
+
 	    <h4>Attack opponent ships!</h4>
 	    <!-- <pre>{{attackModel}}</pre> -->
 	    <pre ng-model="attackResult">{{attackResult}}</pre>
 	    <button class="btn btn-success" ng-click="attackData()">Attack This Coordinate!</button>
 	    <div style="width: 500px">
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A1" btn-checkbox>A1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A2" btn-checkbox>A2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A3" btn-checkbox>A3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A4" btn-checkbox>A4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A5" btn-checkbox>A5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A6" btn-checkbox>A6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A7" btn-checkbox>A7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A8" btn-checkbox>A8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A9" btn-checkbox>A9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A10" btn-checkbox>A10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A1'">A1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A2'">A2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A3'">A3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A4'">A4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A5'">A5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A6'">A6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A7'">A7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A8'">A8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A9'">A9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'A10'">A10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B1" btn-checkbox>B1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B2" btn-checkbox>B2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B3" btn-checkbox>B3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B4" btn-checkbox>B4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B5" btn-checkbox>B5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B6" btn-checkbox>B6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B7" btn-checkbox>B7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B8" btn-checkbox>B8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B9" btn-checkbox>B9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B10" btn-checkbox>B10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B1'">B1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B2'">B2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B3'">B3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B4'">B4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B5'">B5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B6'">B6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B7'">B7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B8'">B8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B9'">B9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'B10'">B10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C1" btn-checkbox>C1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C2" btn-checkbox>C2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C3" btn-checkbox>C3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C4" btn-checkbox>C4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C5" btn-checkbox>C5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C6" btn-checkbox>C6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C7" btn-checkbox>C7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C8" btn-checkbox>C8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C9" btn-checkbox>C9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C10" btn-checkbox>C10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C1'">C1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C2'">C2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C3'">C3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C4'">C4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C5'">C5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C6'">C6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C7'">C7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C8'">C8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C9'">C9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'C10'">C10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D1" btn-checkbox>D1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D2" btn-checkbox>D2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D3" btn-checkbox>D3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D4" btn-checkbox>D4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D5" btn-checkbox>D5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D6" btn-checkbox>D6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D7" btn-checkbox>D7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D8" btn-checkbox>D8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D9" btn-checkbox>D9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D10" btn-checkbox>D10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D1'">D1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D2'">D2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D3'">D3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D4'">D4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D5'">D5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D6'">D6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D7'">D7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D8'">D8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D9'">D9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'D10'">D10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E1" btn-checkbox>E1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E2" btn-checkbox>E2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E3" btn-checkbox>E3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E4" btn-checkbox>E4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E5" btn-checkbox>E5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E6" btn-checkbox>E6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E7" btn-checkbox>E7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E8" btn-checkbox>E8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E9" btn-checkbox>E9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E10" btn-checkbox>E10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E1'">E1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E2'">E2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E3'">E3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E4'">E4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E5'">E5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E6'">E6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E7'">E7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E8'">E8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E9'">E9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'E10'">E10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F1" btn-checkbox>F1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F2" btn-checkbox>F2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F3" btn-checkbox>F3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F4" btn-checkbox>F4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F5" btn-checkbox>F5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F6" btn-checkbox>F6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F7" btn-checkbox>F7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F8" btn-checkbox>F8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F9" btn-checkbox>F9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F10" btn-checkbox>F10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F1'">F1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F2'">F2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F3'">F3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F4'">F4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F5'">F5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F6'">F6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F7'">F7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F8'">F8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F9'">F9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'F10'">F10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G1" btn-checkbox>G1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G2" btn-checkbox>G2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G3" btn-checkbox>G3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G4" btn-checkbox>G4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G5" btn-checkbox>G5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G6" btn-checkbox>G6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G7" btn-checkbox>G7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G8" btn-checkbox>G8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G9" btn-checkbox>G9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G10" btn-checkbox>G10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G1'">G1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G2'">G2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G3'">G3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G4'">G4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G5'">G5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G6'">G6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G7'">G7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G8'">G8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G9'">G9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'G10'">G10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H1" btn-checkbox>H1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H2" btn-checkbox>H2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H3" btn-checkbox>H3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H4" btn-checkbox>H4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H5" btn-checkbox>H5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H6" btn-checkbox>H6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H7" btn-checkbox>H7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H8" btn-checkbox>H8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H9" btn-checkbox>H9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H10" btn-checkbox>H10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H1'">H1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H2'">H2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H3'">H3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H4'">H4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H5'">H5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H6'">H6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H7'">H7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H8'">H8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H9'">H9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'H10'">H10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I1" btn-checkbox>I1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I2" btn-checkbox>I2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I3" btn-checkbox>I3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I4" btn-checkbox>I4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I5" btn-checkbox>I5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I6" btn-checkbox>I6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I7" btn-checkbox>I7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I8" btn-checkbox>I8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I9" btn-checkbox>I9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I10" btn-checkbox>I10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I1'">I1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I2'">I2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I3'">I3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I4'">I4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I5'">I5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I6'">I6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I7'">I7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I8'">I8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I9'">I9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'I10'">I10</label>
 	    </div>
 	    <div class="btn-group">
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J1" btn-checkbox>J1</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J2" btn-checkbox>J2</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J3" btn-checkbox>J3</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J4" btn-checkbox>J4</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J5" btn-checkbox>J5</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J6" btn-checkbox>J6</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J7" btn-checkbox>J7</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J8" btn-checkbox>J8</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J9" btn-checkbox>J9</label>
-	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J10" btn-checkbox>J10</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J1'">J1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J2'">J2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J3'">J3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J4'">J4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J5'">J5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J6'">J6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J7'">J7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J8'">J8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J9'">J9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel" btn-radio="'J10'">J10</label>
 	    </div>
 	    </div>
+
+
 
 </div>
