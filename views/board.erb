@@ -1,19 +1,252 @@
+<div ng-controller="ButtonsCtrl">
+	<h4>Build your ships!</h4>
+	    <pre>{{buildModel}}</pre>
+	    <div style="width: 500px">
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A1" btn-checkbox>A1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A2" btn-checkbox>A2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A3" btn-checkbox>A3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A4" btn-checkbox>A4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A5" btn-checkbox>A5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A6" btn-checkbox>A6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A7" btn-checkbox>A7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A8" btn-checkbox>A8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A9" btn-checkbox>A9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A10" btn-checkbox>A10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B1" btn-checkbox>B1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B2" btn-checkbox>B2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B3" btn-checkbox>B3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B4" btn-checkbox>B4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B5" btn-checkbox>B5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B6" btn-checkbox>B6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B7" btn-checkbox>B7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B8" btn-checkbox>B8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B9" btn-checkbox>B9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.B10" btn-checkbox>B10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C1" btn-checkbox>C1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C2" btn-checkbox>C2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C3" btn-checkbox>C3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C4" btn-checkbox>C4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C5" btn-checkbox>C5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C6" btn-checkbox>C6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C7" btn-checkbox>C7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C8" btn-checkbox>C8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C9" btn-checkbox>C9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.C10" btn-checkbox>C10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D1" btn-checkbox>D1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D2" btn-checkbox>D2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D3" btn-checkbox>D3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D4" btn-checkbox>D4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D5" btn-checkbox>D5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D6" btn-checkbox>D6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D7" btn-checkbox>D7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D8" btn-checkbox>D8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D9" btn-checkbox>D9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.D10" btn-checkbox>D10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E1" btn-checkbox>E1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E2" btn-checkbox>E2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E3" btn-checkbox>E3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E4" btn-checkbox>E4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E5" btn-checkbox>E5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E6" btn-checkbox>E6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E7" btn-checkbox>E7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E8" btn-checkbox>E8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E9" btn-checkbox>E9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.E10" btn-checkbox>E10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F1" btn-checkbox>F1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F2" btn-checkbox>F2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F3" btn-checkbox>F3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F4" btn-checkbox>F4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F5" btn-checkbox>F5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F6" btn-checkbox>F6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F7" btn-checkbox>F7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F8" btn-checkbox>F8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F9" btn-checkbox>F9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.F10" btn-checkbox>F10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G1" btn-checkbox>G1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G2" btn-checkbox>G2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G3" btn-checkbox>G3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G4" btn-checkbox>G4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G5" btn-checkbox>G5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G6" btn-checkbox>G6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G7" btn-checkbox>G7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G8" btn-checkbox>G8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G9" btn-checkbox>G9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.G10" btn-checkbox>G10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H1" btn-checkbox>H1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H2" btn-checkbox>H2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H3" btn-checkbox>H3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H4" btn-checkbox>H4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H5" btn-checkbox>H5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H6" btn-checkbox>H6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H7" btn-checkbox>H7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H8" btn-checkbox>H8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H9" btn-checkbox>H9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.H10" btn-checkbox>H10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I1" btn-checkbox>I1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I2" btn-checkbox>I2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I3" btn-checkbox>I3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I4" btn-checkbox>I4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I5" btn-checkbox>I5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I6" btn-checkbox>I6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I7" btn-checkbox>I7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I8" btn-checkbox>I8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I9" btn-checkbox>I9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.I10" btn-checkbox>I10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J1" btn-checkbox>J1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J2" btn-checkbox>J2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J3" btn-checkbox>J3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J4" btn-checkbox>J4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J5" btn-checkbox>J5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J6" btn-checkbox>J6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J7" btn-checkbox>J7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J8" btn-checkbox>J8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J9" btn-checkbox>J9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.J10" btn-checkbox>J10</label>
+	    </div>
+	    </div>
 
-		<div ng-controller="ddController" style="margin-top:50px;">
-			<div class="row">
-				<div class="col-md-1 col-md-offset-1">
-					<p>DRAG AND DROP A SHIP onto the grid to the right</p>
-					<div class="peg green" x-lvl-draggable="true" data-color="green">Destroyer</div>
-					<div class="peg red" x-lvl-draggable="true" data-color="red">Cruiser</div>
-					<div class="peg blue" x-lvl-draggable="true" data-color="blue">Submarine</div>
-					<div class="peg black" x-lvl-draggable="true" data-color="black">Battleship</div>
-					<div class="peg grey" x-lvl-draggable="true" data-color="grey">Aircraft Carrier</div>
-				</div>
-	
-				<div class="col-md-10">
-					<div ng-repeat="r in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
-						<span class="slot circle" ng-repeat="c in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]" x-lvl-drop-target="true" x-on-drop="dropped(dragEl, dropEl)"></span>
-					</div>
-				</div>
-			</div>
-		</div>
+	    <h4>Attack opponent ships!</h4>
+	    <pre>{{attackModel}}</pre>
+	    <div style="width: 500px">
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A1" btn-checkbox>A1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A2" btn-checkbox>A2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A3" btn-checkbox>A3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A4" btn-checkbox>A4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A5" btn-checkbox>A5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A6" btn-checkbox>A6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A7" btn-checkbox>A7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A8" btn-checkbox>A8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A9" btn-checkbox>A9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A10" btn-checkbox>A10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B1" btn-checkbox>B1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B2" btn-checkbox>B2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B3" btn-checkbox>B3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B4" btn-checkbox>B4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B5" btn-checkbox>B5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B6" btn-checkbox>B6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B7" btn-checkbox>B7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B8" btn-checkbox>B8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B9" btn-checkbox>B9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.B10" btn-checkbox>B10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C1" btn-checkbox>C1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C2" btn-checkbox>C2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C3" btn-checkbox>C3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C4" btn-checkbox>C4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C5" btn-checkbox>C5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C6" btn-checkbox>C6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C7" btn-checkbox>C7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C8" btn-checkbox>C8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C9" btn-checkbox>C9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.C10" btn-checkbox>C10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D1" btn-checkbox>D1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D2" btn-checkbox>D2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D3" btn-checkbox>D3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D4" btn-checkbox>D4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D5" btn-checkbox>D5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D6" btn-checkbox>D6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D7" btn-checkbox>D7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D8" btn-checkbox>D8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D9" btn-checkbox>D9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.D10" btn-checkbox>D10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E1" btn-checkbox>E1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E2" btn-checkbox>E2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E3" btn-checkbox>E3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E4" btn-checkbox>E4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E5" btn-checkbox>E5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E6" btn-checkbox>E6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E7" btn-checkbox>E7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E8" btn-checkbox>E8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E9" btn-checkbox>E9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.E10" btn-checkbox>E10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F1" btn-checkbox>F1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F2" btn-checkbox>F2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F3" btn-checkbox>F3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F4" btn-checkbox>F4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F5" btn-checkbox>F5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F6" btn-checkbox>F6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F7" btn-checkbox>F7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F8" btn-checkbox>F8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F9" btn-checkbox>F9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.F10" btn-checkbox>F10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G1" btn-checkbox>G1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G2" btn-checkbox>G2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G3" btn-checkbox>G3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G4" btn-checkbox>G4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G5" btn-checkbox>G5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G6" btn-checkbox>G6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G7" btn-checkbox>G7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G8" btn-checkbox>G8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G9" btn-checkbox>G9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.G10" btn-checkbox>G10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H1" btn-checkbox>H1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H2" btn-checkbox>H2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H3" btn-checkbox>H3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H4" btn-checkbox>H4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H5" btn-checkbox>H5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H6" btn-checkbox>H6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H7" btn-checkbox>H7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H8" btn-checkbox>H8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H9" btn-checkbox>H9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.H10" btn-checkbox>H10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I1" btn-checkbox>I1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I2" btn-checkbox>I2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I3" btn-checkbox>I3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I4" btn-checkbox>I4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I5" btn-checkbox>I5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I6" btn-checkbox>I6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I7" btn-checkbox>I7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I8" btn-checkbox>I8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I9" btn-checkbox>I9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.I10" btn-checkbox>I10</label>
+	    </div>
+	    <div class="btn-group">
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J1" btn-checkbox>J1</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J2" btn-checkbox>J2</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J3" btn-checkbox>J3</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J4" btn-checkbox>J4</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J5" btn-checkbox>J5</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J6" btn-checkbox>J6</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J7" btn-checkbox>J7</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J8" btn-checkbox>J8</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J9" btn-checkbox>J9</label>
+	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.J10" btn-checkbox>J10</label>
+	    </div>
+	    </div>
+
+</div>
