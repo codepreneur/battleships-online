@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'json'
 require_relative 'coordinates'
 require_relative 'ships'
 
@@ -11,6 +12,18 @@ enable :sessions
 
 get '/' do
 	erb :board
+end
+
+post '/build' do
+	content_type 'application/json'
+	data = request.body.read
+  erb data, layout: false
+end
+
+post '/attack' do
+	content_type 'application/json'
+	data = request.body.read
+  erb data, layout: false
 end
 
 

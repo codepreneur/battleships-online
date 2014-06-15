@@ -1,5 +1,31 @@
 angular.module('app', ['ui.bootstrap','ngRoute'])
-.controller("ButtonsCtrl",['$scope',function($scope){
+.controller("ButtonsCtrl",['$scope','$http',function($scope,$http){
+    $scope.attackData = function () {
+      $http.post('/attack',{"attack":$scope.attackModel}).success(function(data,status) {
+            $scope.status = status;
+            $scope.data = data;
+            $scope.attackResult = data;
+         console.log(data)
+      })
+      .error(function(data, status) {
+            $scope.data = data || "Request failed";
+            $scope.status = status;        
+        });
+   };
+
+   $scope.buildData = function () {
+      $http.post('/build',{"build":$scope.buildModel}).success(function(data,status) {
+            $scope.status = status;
+            $scope.data = data;
+            $scope.buildResult = data;
+         console.log(data)
+      })
+      .error(function(data, status) {
+            $scope.data = data || "Request failed";
+            $scope.status = status;        
+        });
+   };
+
 	$scope.buildModel = {
     A1: false,
     A2: false,

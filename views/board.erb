@@ -1,6 +1,8 @@
 <div ng-controller="ButtonsCtrl">
 	<h4>Build your ships!</h4>
-	    <pre>{{buildModel}}</pre>
+	    <!-- <pre>{{buildModel}}</pre> -->
+	    <pre ng-model="buildResult">{{buildResult}}</pre>
+	    <button class="btn btn-success" ng-click="buildData()">Save Placed Ships</button>
 	    <div style="width: 500px">
 	    <div class="btn-group">
 	        <label class="btn btn-primary" style="width: 50px" ng-model="buildModel.A1" btn-checkbox>A1</label>
@@ -125,7 +127,9 @@
 	    </div>
 
 	    <h4>Attack opponent ships!</h4>
-	    <pre>{{attackModel}}</pre>
+	    <!-- <pre>{{attackModel}}</pre> -->
+	    <pre ng-model="attackResult">{{attackResult}}</pre>
+	    <button class="btn btn-success" ng-click="attackData()">Attack This Coordinate!</button>
 	    <div style="width: 500px">
 	    <div class="btn-group">
 	        <label class="btn btn-primary" style="width: 50px" ng-model="attackModel.A1" btn-checkbox>A1</label>
